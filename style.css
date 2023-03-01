@@ -1,0 +1,247 @@
+:root {
+    --head-color: rgb(23, 48, 94);
+    --first-color: rgba(201, 150, 150, 0.377);
+    --second-color: rgb(70, 127, 173);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: inherit;
+}
+
+header {
+    padding: 15px 20px;
+    background-color: var(--head-color);
+
+}
+
+body {
+    font-family: 'Brush Script MT', cursive;
+}
+
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 25px;
+    font-size: 25px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+section.one {
+    height: 100vh;
+    background-color: var(--second-color);
+    position: relative;
+}
+
+.one div {
+    display: grid;
+    justify-items: center;
+
+}
+
+.one div h1 {
+    position: absolute;
+    top: 46%;
+    font-size: 50px;
+    color: white;
+}
+
+
+.one div p {
+    position: absolute;
+    top: 53%;
+    font-size: 35px;
+    color: var(--head-color);
+}
+
+/*Start Section two */
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--first-color);
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--head-color);
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 6rem;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: var(--head-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+    background-color: var(--head-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+
+.code {
+    color: var(--second-color);
+    transition: color 0.3s ease-out;
+}
+
+.btn-show-all {
+    font-size: 2rem;
+    background-color: var(--head-color);
+    transition: background 0.3s ease-out;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--head-color);
+}
+
+/*End Section two */
+/* Start Section three */
+
+.content {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    background-color: var(--head-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.content quote {
+    color: wheat;
+}
+
+.content .social-media {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    color: azure;
+
+}
+
+.content .social-media a {
+    color: azure;
+}
+
+.content .social-media i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+    color: white
+}
+
+footer {
+    border-top: 3px solid var(--first-color);
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    display: flex;
+    width: 95%;
+}
+
+footer p {}
+
+footer a {
+    color: white;
+    position: absolute;
+    right: 19px;
+}
+
+@media (max-width:980px) {
+    footer {
+        display: block;
+    }
+}
+
+/* End Section three */
